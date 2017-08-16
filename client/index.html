@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- this line removes any default padding and style. you might only need one of these values set. -->
+    <!-- <style> body {padding: 0; margin: 0;} </style> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" src="libraries/p5.play.js"></script>
+    <script language="javascript" src="libraries/p5.collide2d.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+  </head>
+  <body>
+
+    <ul class="pages">
+
+        <li class="game page">
+            <div id="game">
+            </div>
+            <br />
+            <div class="chatArea">
+              <ul class="messages"></ul>
+            </div>
+            <input class="inputMessage" placeholder="Type here..."/>
+        </li>
+
+        <li class="input page">
+            <div class="inputForm">
+                <h3 class="firstPlayer">You are this session's first player.</h3>
+                <h4 class="tip">Please enter a number between 1 and 100</h3>
+                <input class="playerHealthInput" type="number" min='1' max='100' placeholder='15' />
+            </div>
+        </li>
+
+        <li class="login page">
+            <div class="form">
+                <h3 class="title">Enter your player name</h3>
+                <input class="usernameInput" type="text" maxlength="14" />
+            </div>
+        </li>
+
+    </ul>
+
+  </body>
+  <script language="javascript" type="text/javascript" src="main.js"></script>
+</html>
